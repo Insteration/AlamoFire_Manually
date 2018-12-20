@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        AF.request("https://jsonplaceholder.typicode.com/todos/60").responseJSON{
+            response in print(response)
+        }
     }
 
 
